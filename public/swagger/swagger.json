@@ -1,0 +1,41 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Enten swagger docs",
+        "description": "Getting started with Laravel and Swagger",
+        "termsOfService": "",
+        "contact": {
+            "email": "okay7290@gmail.com"
+        },
+        "version": "1.0.0"
+    },
+    "host": "localhost:8000",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "paths": {
+        "/api/v1/visitor/logout": {
+            "get": {
+                "tags": [
+                    "authentication"
+                ],
+                "description": "Logout",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                },
+                "security": [
+                    {
+                        "bearerAuth": []
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {}
+}
