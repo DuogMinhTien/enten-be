@@ -18,7 +18,7 @@ use Botble\Base\Http\Responses\BaseHttpResponse;
 use Botble\Media\Services\UploadsManager;
 use Botble\Vocabulary\Models\Vocabulary;
 
-class CustomersController extends BaseController
+class VocabularyController extends BaseController
 {
     /**
      * @var VocabularyInterface
@@ -40,10 +40,8 @@ class CustomersController extends BaseController
         $this->uploadManager = $uploadManager;
     }
     public function getListVocabularies (Request $request, BaseHttpResponse $response) {
-        $records = Vocabulary::where('status', 'published');
-        return $response->setData([
-            'data' => $records,
-        ]);
+        $records = Vocabulary::where('status', 'published')->get();
+        return $response->setData($records);
     }
 
 }

@@ -1,7 +1,6 @@
 <?php
 use Illuminate\Http\Request;
 use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Vocabulary\Models\Vocabulary;
 
 Route::group([
     'middleware' => 'api',

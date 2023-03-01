@@ -2,6 +2,7 @@
 
 namespace Botble\Vocabulary\Providers;
 
+
 use Botble\Vocabulary\Models\Vocabulary;
 use Illuminate\Support\ServiceProvider;
 use Botble\Vocabulary\Repositories\Caches\VocabularyCacheDecorator;
@@ -31,8 +32,7 @@ class VocabularyServiceProvider extends ServiceProvider
             ->loadMigrations()
             ->loadAndPublishTranslations()
             ->loadAndPublishViews()
-            ->loadRoutes(['web']);
-
+            ->loadRoutes(['web', 'api']);
         if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
             if (defined('LANGUAGE_ADVANCED_MODULE_SCREEN_NAME')) {
                 // Use language v2

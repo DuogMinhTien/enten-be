@@ -1,5 +1,7 @@
 <?php
 
+use Botble\Base\Http\Responses\BaseHttpResponse;
+use Botble\Vocabulary\Models\Vocabulary;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Botble\Vocabulary\Http\Controllers', 'middleware' => ['web', 'core']], function () {
@@ -17,3 +19,4 @@ Route::group(['namespace' => 'Botble\Vocabulary\Http\Controllers', 'middleware' 
     });
 
 });
+
