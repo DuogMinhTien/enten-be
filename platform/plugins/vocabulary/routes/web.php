@@ -17,6 +17,4 @@ Route::group(['namespace' => 'Botble\Vocabulary\Http\Controllers', 'middleware' 
             ]);
         });
     });
-
 });
-

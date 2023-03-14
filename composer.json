@@ -5,7 +5,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0|^8.1",
+        "php": "^7.3|^8.0|^8.2",
         "ext-curl": "*",
         "ext-gd": "*",
         "ext-json": "*",
@@ -33,6 +33,7 @@
         "laravel/tinker": "^2.5",
         "league/flysystem-aws-s3-v3": "^1.0",
         "predis/predis": "^2.0",
+        "tymon/jwt-auth": "*",
         "wikimedia/composer-merge-plugin": "^2.0",
         "zircote/swagger-php": "2.0.13"
     },

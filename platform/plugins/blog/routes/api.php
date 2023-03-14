@@ -1,4 +1,5 @@
 <?php
+
 use Illuminate\Http\Request;
 use Botble\Base\Http\Responses\BaseHttpResponse;
 
