@@ -6,7 +6,7 @@ class APIController extends Controller
 {
     /**
      *  @SWG\Post(
-     *     path="api/v1/customer/login",
+     *     path="/api/v1/customer/login",
      *     tags={"Authentication"},
      *     summary="Get a JWT via given credentials",
      *     description="Returns a JWT token",
